@@ -137,3 +137,99 @@ li a:hover {
     margin-top: 20px;
   }
 }
+
+
+
+.formation-modal-wrapper {
+  display: inline-block;
+  color: black;
+  float: right;
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  opacity: 0;
+
+  /*transition: all 300ms ease-in-out;*/
+}
+
+@-webkit-keyframes dropmodal {
+    0% {
+        -webkit-transform: translateY(150px);
+    }
+    100% {
+        -webkit-transform: translateY(1);
+    }
+}
+
+.formation-modal-wrapper.is-open {
+  opacity: 1;
+  pointer-events: auto;
+
+  -webkit-animation-name: dropmodal;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.8s;
+}
+
+.content-wrapper {
+  width: 800px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav {
+  width: 200px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.4em;
+  height: 250px;
+  width: 200px;
+  font-size: 32px;
+
+  -webkit-animation-name: dropNav;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes dropNav {
+    0% {
+        -webkit-transform: translateY(150px);
+    }
+    100% {
+        -webkit-transform: translateY(1);
+    }
+}
+
+.modal-formation {
+  width: 400px;
+  background-color: grey;
+  height: 400px;
+  opacity: 0;
+}
+
+.modal-formation.is-open {
+  opacity: 1;
+  pointer-events: auto;
+
+  -webkit-animation-name: dropmodal;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.8s;
+}
+
+@-webkit-keyframes dropmodal {
+    0% {
+        -webkit-transform: translateY(150px);
+    }
+    100% {
+        -webkit-transform: translateY(1);
+    }
+}
