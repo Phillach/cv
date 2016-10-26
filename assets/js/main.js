@@ -14,7 +14,7 @@ function modalLink() {
 $(function() {
 
   $('.current-link').click(function(){
-    $('.modal-formation').addClass('is-open');
+    $('.modal-wrapper').addClass('is-open');
     return false;
   });
 

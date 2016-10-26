@@ -31,7 +31,7 @@ table {
 }
 
 .banner-wrapper {
-  background-color: white;
+  background-color: #fff;
   height: 90px;
   display: flex;
   align-items: center;
@@ -47,36 +47,55 @@ table {
   padding-top: 30px;
 }
 
+.content-wrapper {
+  max-width: 960px;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
 .nav-wrapper {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  float: left;
   display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
   height: 250px;
   width: 200px;
-  margin-top: 100px;
-  margin-left: 100px;
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.4em;
-  font-size: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  -webkit-animation-name: dropNav;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.8s;
+  font-size: 32px;
+  line-height: 1.3em;
 }
 
-@-webkit-keyframes dropNav {
+.modal-wrapper {
+  background-color: #fff;
+  height: 400px;
+  display: inline-block;
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 40px;
+  opacity: 0;
+}
+
+.modal-wrapper.is-open {
+  opacity: 1;
+  pointer-events: auto;
+
+  -webkit-animation-name: dropmodal;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.4s;
+}
+
+@-webkit-keyframes dropmodal {
     0% {
-        -webkit-transform: translateY(150px);
+        -webkit-transform: translateY(125px);
     }
     100% {
         -webkit-transform: translateY(1);
     }
 }
-
 
 li a {
   text-decoration: none;
@@ -95,142 +114,4 @@ li a:hover {
 .current-link:hover {
   color: #E8E8E8;
   transition: all 400ms ease-in-out;
-}
-
-
-@media (max-width: 387px) {
-  .banner {
-    font-size: 32px;
-    padding-left: 20px;
-  }
-  .nav-wrapper {
-    margin-left: 20px;
-    margin-top: 40px;
-  }
-  .banner-wrapper {
-    height: 75px;
-  }
-}
-
-@media (max-height: 568px) { /* iphone 5 landscape */
-  .banner-wrapper {
-    height: 75px;
-  }
-  .banner {
-    padding-left: 20px;
-  }
-  .nav-wrapper {
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 24px;
-    height: 175px;
-    width: 125px;
-  }
-}
-
-@media (max-width: 414px) { /* iphone 6 plus portrait */
-  .banner {
-    padding-left: 20px;
-  }
-  .nav-wrapper {
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-}
-
-
-
-.formation-modal-wrapper {
-  display: inline-block;
-  color: black;
-  float: right;
-  height: 200px;
-  width: 400px;
-  background-color: white;
-  opacity: 0;
-
-  /*transition: all 300ms ease-in-out;*/
-}
-
-@-webkit-keyframes dropmodal {
-    0% {
-        -webkit-transform: translateY(150px);
-    }
-    100% {
-        -webkit-transform: translateY(1);
-    }
-}
-
-.formation-modal-wrapper.is-open {
-  opacity: 1;
-  pointer-events: auto;
-
-  -webkit-animation-name: dropmodal;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.8s;
-}
-
-.content-wrapper {
-  width: 800px;
-  height: auto;
-  margin-left: 100px;
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.nav {
-  width: 200px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.4em;
-  height: 250px;
-  width: 200px;
-  font-size: 32px;
-
-  -webkit-animation-name: dropNav;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.8s;
-}
-
-@-webkit-keyframes dropNav {
-    0% {
-        -webkit-transform: translateY(150px);
-    }
-    100% {
-        -webkit-transform: translateY(1);
-    }
-}
-
-.modal-formation {
-  width: 400px;
-  background-color: white;
-  height: 400px;
-  opacity: 0;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.modal-formation.is-open {
-  opacity: 1;
-  pointer-events: auto;
-
-  -webkit-animation-name: dropmodal;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 0.8s;
-}
-
-@-webkit-keyframes dropmodal {
-    0% {
-        -webkit-transform: translateY(150px);
-    }
-    100% {
-        -webkit-transform: translateY(1);
-    }
 }
