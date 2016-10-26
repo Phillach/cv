@@ -210,9 +210,10 @@ li a:hover {
 
 .modal-formation {
   width: 400px;
-  background-color: grey;
+  background-color: white;
   height: 400px;
   opacity: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .modal-formation.is-open {
