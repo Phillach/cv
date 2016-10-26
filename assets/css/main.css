@@ -24,7 +24,7 @@ table {
 
 
 .landing-page-wrapper {
-  background: url(../img/bg.jpg);
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ table {
 
 .modal-wrapper {
   background-color: #fff;
-  height: 400px;
+  height: 200px;
   display: inline-block;
   float: right;
   font-family: 'Josefin Sans', sans-serif;
