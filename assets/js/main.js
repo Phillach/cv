@@ -19,7 +19,7 @@ $(function() {
   });
 
   $('.close-btn').click(function(){
-    $('.modal-wrapper').removeClass('is-open')
+    $('.modal-wrapper').removeClass('is-open');
   });
 
 });
