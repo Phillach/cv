@@ -69,6 +69,7 @@ table {
 }
 
 .modal-wrapper {
+    position: absolute;
   background-color: #fff;
   height: 200px;
   display: inline-block;
@@ -76,6 +77,7 @@ table {
   font-family: 'Josefin Sans', sans-serif;
   padding: 40px;
   opacity: 0;
+  margin-left: 150px;
 }
 
 .modal-wrapper.is-open {
@@ -114,4 +116,11 @@ li a:hover {
 .current-link:hover {
   color: #E8E8E8;
   transition: all 400ms ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    margin-left: 425px;
 }

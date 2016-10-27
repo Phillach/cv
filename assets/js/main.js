@@ -18,8 +18,8 @@ $(function() {
     return false;
   });
 
-  //$('.current-link').click(function(){
-  //  $('.modal-wrapper').removeClass('is-open');
-  //});
+  $('.close-btn').click(function(){
+    $('.modal-wrapper').removeClass('is-open')
+  });
 
 });
