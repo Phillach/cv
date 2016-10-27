@@ -68,7 +68,7 @@ table {
   line-height: 1.3em;
 }
 
-.modal-wrapper {
+.modal-wrapper-formation {
     position: absolute;
   background-color: #fff;
   height: 200px;
@@ -80,7 +80,29 @@ table {
   margin-left: 150px;
 }
 
-.modal-wrapper.is-open {
+.modal-wrapper-formation.is-open {
+  opacity: 1;
+  pointer-events: auto;
+
+  -webkit-animation-name: dropmodal;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.4s;
+}
+
+.modal-wrapper-realisation {
+    position: absolute;
+  background-color: #fff;
+  height: 200px;
+  display: inline-block;
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 40px;
+  opacity: 0;
+  margin-left: 150px;
+}
+
+.modal-wrapper-realisation.is-open {
   opacity: 1;
   pointer-events: auto;
 

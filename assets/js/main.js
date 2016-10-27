@@ -12,14 +12,24 @@ function modalLink() {
 
 
 $(function() {
-
+//formation modal
   $('.current-link').click(function(){
-    $('.modal-wrapper').addClass('is-open');
+    $('.modal-wrapper-formation').addClass('is-open');
     return false;
   });
 
   $('.close-btn').click(function(){
-    $('.modal-wrapper').removeClass('is-open');
+    $('.modal-wrapper-formation').removeClass('is-open');
+  });
+
+  //realisation modal
+  $('.realisation-link').click(function(){
+    $('.modal-wrapper-realisation').addClass('is-open');
+    return false;
+  });
+
+  $('.close-btn').click(function(){
+    $('.modal-wrapper-realisation').removeClass('is-open');
   });
 
 });
