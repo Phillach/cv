@@ -11,25 +11,39 @@ function modalLink() {
 }*/
 
 
-$(function() {
-//formation modal
-  $('.current-link').click(function(){
-    $('.modal-wrapper-formation').addClass('is-open');
-    return false;
-  });
 
-  $('.close-btn').click(function(){
-    $('.modal-wrapper-formation').removeClass('is-open');
-  });
+function onReady(){
+    initFormation();
+    initRealisation();
+}
 
-  //realisation modal
-  $('.realisation-link').click(function(){
-    $('.modal-wrapper-realisation').addClass('is-open');
-    return false;
-  });
+function initFormation() {
+    var formationLink = document.querySelector('.formation-link');
+    var modalWrapperFormation = document.querySelector('.modal-wrapper-formation');
+    var closeBtnFormation = document.querySelector('.close-btn-formation');
 
-  $('.close-btn').click(function(){
-    $('.modal-wrapper-realisation').removeClass('is-open');
-  });
+    formationLink.addEventListener("click", function(){
+        modalWrapperFormation.classList.add("is-open");
+    });
 
-});
+    closeBtnFormation.addEventListener("click", function(){
+        modalWrapperFormation.classList.remove("is-open");
+    });
+
+}
+
+function initRealisation() {
+    var realisationLink = document.querySelector('.realisation-link');
+    var modalWrapperRealisation = document.querySelector('.modal-wrapper-realisation');
+    var closeBtnRealisation = document.querySelector('.close-btn-realisation');
+
+    realisationLink.addEventListener("click", function(){
+        modalWrapperRealisation.classList.add("is-open");
+    });
+
+    closeBtnRealisation.addEventListener("click", function(){
+        modalWrapperRealisation.classList.remove("is-open");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", onReady);
