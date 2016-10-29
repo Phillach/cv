@@ -132,11 +132,11 @@ li a:hover {
   transition: all 400ms ease-in-out;
 }
 
-.formation-link {
+.current-link {
   color: black;
 }
 
-.formation-link:hover {
+.current-link:hover {
   color: #E8E8E8;
   transition: all 400ms ease-in-out;
 }
@@ -146,4 +146,5 @@ li a:hover {
     cursor: pointer;
     top: 15px;
     margin-left: 425px;
+    color: black;
 }
