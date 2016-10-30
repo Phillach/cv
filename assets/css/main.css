@@ -32,6 +32,9 @@ nav {
 a {
   text-decoration: none;
   color: #A7A7A7; }
+  a:hover {
+    color: black;
+    transition: all 400ms ease-in-out; }
 
 .modal-skills {
   display: inline-block;
@@ -41,10 +44,10 @@ a {
   left: 500px;
   padding: 25px;
   background-color: white;
-  opacity: 0;
   pointer-events: none;
-  opacity: 1;
-  pointer-events: auto; }
+  opacity: 0; }
+  .modal-skills.is-open {
+    opacity: 1; }
 
 .close-btn {
   position: absolute;
