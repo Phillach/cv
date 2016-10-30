@@ -40,11 +40,13 @@ a {
 .modal-skills {
   background-color: hotpink;
   position: relative;
-  display: inline-block;
   top: 150px;
   left: 350px;
   padding: 15px;
-  width: 400px; }
+  width: 400px;
+  display: none; }
+  .modal-skills.is-open {
+    display: inline-block; }
 
 .close-btn {
   position: absolute;
@@ -74,7 +76,7 @@ a {
   color: black; }
 
 .current-link:hover {
-  color: #E8E8E8;
+  color: #A7A7A7;
   transition: all 400ms ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
