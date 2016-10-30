@@ -31,7 +31,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #A7A7A7; }
 
 .modal-skills {
   display: inline-block;
@@ -40,7 +40,11 @@ a {
   top: 200px;
   left: 500px;
   padding: 25px;
-  background-color: white; }
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto; }
 
 .close-btn {
   position: absolute;
@@ -72,5 +76,12 @@ a {
 .modal-skills-li {
   line-height: 1.6em;
   font-size: 16px; }
+
+.current-link {
+  color: black; }
+
+.current-link:hover {
+  color: #E8E8E8;
+  transition: all 400ms ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
