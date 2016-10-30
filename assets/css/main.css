@@ -1,6 +1,8 @@
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0; }
 
 header {
   position: fixed;
@@ -14,71 +16,59 @@ header {
 
 nav {
   display: inline-block;
-  position: relative;
-  width: 150px;
-  top: 200px;
-  left: 150px;
+  float: left;
   background-color: white;
-  line-height: 1.6em;
-  padding: 25px;
+  position: relative;
+  top: 150px;
+  left: 150px;
   font-size: 24px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
+  padding: 15px;
+  line-height: 1.6em; }
 
 .nav-ul {
+  list-style: none;
   padding: 0;
-  margin: 0;
-  list-style: none; }
+  margin: 0; }
 
 a {
-  text-decoration: none;
-  color: #A7A7A7; }
+  color: #A7A7A7;
+  text-decoration: none; }
   a:hover {
     color: black;
     transition: all 400ms ease-in-out; }
 
 .modal-skills {
+  background-color: hotpink;
+  position: relative;
   display: inline-block;
-  position: absolute;
-  width: 500px;
-  top: 200px;
-  left: 500px;
-  padding: 25px;
-  background-color: white;
-  pointer-events: none;
-  opacity: 0; }
-  .modal-skills.is-open {
-    opacity: 1; }
+  top: 150px;
+  left: 350px;
+  padding: 15px;
+  width: 400px; }
 
 .close-btn {
   position: absolute;
+  float: right;
   top: 10px;
   right: 10px;
-  height: 30px;
-  width: 30px;
-  font-size: 30px;
+  height: 25px;
+  width: 25px;
   text-align: center;
-  line-height: 30px;
+  font-size: 24px;
   cursor: pointer;
   transition: all 100ms ease-in-out; }
   .close-btn:hover {
     transform: scale(1.2); }
 
-.ion-colse-round {
-  font-size: 0.8em;
-  margin-left: 0.3em; }
-
-.modal-title {
+.modal-skills-title {
   margin: 0;
-  padding-bottom: 20px; }
+  padding-bottom: 25px; }
 
 .modal-skills-ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none; }
-
-.modal-skills-li {
-  line-height: 1.6em;
-  font-size: 16px; }
+  line-height: 1.6em; }
 
 .current-link {
   color: black; }
